@@ -1,13 +1,12 @@
 import streamlit as st
- import requests
- import itertools
- import string
- import time
+import requests
+import itertools
+import string
+import time
  
- st.title("Checker de usuarios de 4 letras en TikTok")
- 
- # Iniciar checkeo
- if st.button("Buscar 1000 disponibles"):
+st.title("Checker de usuarios de 4 letras en TikTok")
+  # Iniciar checkeo
+if st.button("Buscar 1000 disponibles"):
      caracteres = string.ascii_lowercase + string.digits
      combinaciones = itertools.product(caracteres, repeat=4)
      resultados = []
