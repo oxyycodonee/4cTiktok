@@ -18,7 +18,7 @@ def generar_usernames(cantidad):
     return list({''.join(random.choices(caracteres, k=4)) for _ in range(cantidad * 2)})[:cantidad]
 
 st.title("Checker de 4c.")
-st.caption("By @oxyycodonee."
+st.caption("By @oxyycodonee.")
 if st.button("Buscar 5000 disponibles"):
     st.write("Buscando, espera un momento...")
     usernames = generar_usernames(5000)
