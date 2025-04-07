@@ -19,9 +19,9 @@ def generar_usernames(cantidad):
 
 st.title("Checker de 4c.")
 st.caption("By @oxyycodonee.")
-if st.button("Buscar 5000 disponibles"):
+if st.button("Buscar"):
     st.write("Buscando, espera un momento...")
-    usernames = generar_usernames(5000)
+    usernames = generar_usernames(100000)
     disponibles = []
 
     with ThreadPoolExecutor(max_workers=100) as executor:
